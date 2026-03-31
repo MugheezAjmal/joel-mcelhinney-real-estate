@@ -1,0 +1,85 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        teal: {
+          50:  '#e0f4f6',
+          100: '#b3e5ea',
+          200: '#80d5dd',
+          300: '#4dc4cf',
+          400: '#26b8c5',
+          500: '#008C9A',
+          600: '#007f8c',
+          700: '#006f7b',
+          800: '#005f6a',
+          900: '#003149',
+          DEFAULT: '#008C9A',
+        },
+        navy: {
+          50:  '#e6edf2',
+          100: '#c0d1de',
+          200: '#96b2c8',
+          300: '#6c93b2',
+          400: '#4d7ba2',
+          500: '#2e6491',
+          600: '#255983',
+          700: '#1a4b72',
+          800: '#103c61',
+          900: '#003149',
+          DEFAULT: '#003149',
+        },
+        brand: {
+          teal:  '#008C9A',
+          navy:  '#003149',
+          gray:  '#808285',
+          light: '#E2E2E2',
+          red:   '#EE3124',
+          white: '#FFFFFF',
+        },
+      },
+      fontFamily: {
+        montserrat: ['var(--font-montserrat)', 'Montserrat', 'sans-serif'],
+        lato:       ['var(--font-lato)', 'Lato', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial':   'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':    'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'noise':             "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E\")",
+      },
+      boxShadow: {
+        'teal-sm':  '0 2px 8px rgba(0,140,154,0.15), 0 1px 3px rgba(0,140,154,0.08)',
+        'teal-md':  '0 4px 20px rgba(0,140,154,0.20), 0 2px 8px rgba(0,140,154,0.10)',
+        'teal-lg':  '0 8px 40px rgba(0,140,154,0.25), 0 4px 16px rgba(0,140,154,0.12)',
+        'navy-sm':  '0 2px 8px rgba(0,49,73,0.12), 0 1px 3px rgba(0,49,73,0.06)',
+        'navy-md':  '0 4px 20px rgba(0,49,73,0.18), 0 2px 8px rgba(0,49,73,0.08)',
+        'navy-lg':  '0 8px 40px rgba(0,49,73,0.22), 0 4px 16px rgba(0,49,73,0.10)',
+        'card':     '0 1px 3px rgba(0,49,73,0.06), 0 4px 16px rgba(0,49,73,0.08), 0 12px 40px rgba(0,49,73,0.06)',
+        'card-hover': '0 2px 6px rgba(0,140,154,0.08), 0 8px 32px rgba(0,140,154,0.14), 0 20px 60px rgba(0,49,73,0.10)',
+      },
+      letterSpacing: {
+        display: '-0.04em',
+        tight:   '-0.02em',
+        wide:    '0.08em',
+        wider:   '0.14em',
+        widest:  '0.20em',
+      },
+      lineHeight: {
+        display: '0.92',
+        snug:    '1.2',
+        normal:  '1.6',
+        relaxed: '1.75',
+      },
+      transitionTimingFunction: {
+        spring: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+        smooth: 'cubic-bezier(0.4, 0, 0.2, 1)',
+      },
+    },
+  },
+  plugins: [],
+};
